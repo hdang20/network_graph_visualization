@@ -3,19 +3,19 @@
   "version": "1.0",
   "data": "data.json",
   "logo": {
-    "file": "",
-    "link": "",
-    "text": "Christine"
+    "file": "./images/Webp.net-resizeimage.jpg",
+    "link": "https://www.arteducators.org/",
+    "text": "National Art Education Association"
   },
   "text": {
-    "more": "",
-    "intro": "Test graph",
-    "title": "Test graph"
+    "more": "The direction of relationship (edge) is clockwise. The color of relationship refers to the number of roles the professor played in his student's committee: grey (one role), green (two roles), and blue (three roles).",
+    "intro": "An interactive graph illustrates the relationships between professors and their students in art higher education",
+    "title": "ART EDUCATION GENEALOGY"
   },
   "legend": {
-    "edgeLabel": "Edge description",
-    "colorLabel": "Modularity",
-    "nodeLabel": "Node description"
+    "edgeLabel": "Professor-Student relationship",
+    "colorLabel": "Groups of connected Professor-Student",
+    "nodeLabel": "Professor or Student"
   },
   "features": {
     "search": true,
@@ -32,15 +32,15 @@
       "defaultHoverLabelBGColor": "#002147",
       "defaultLabelBGColor": "#ddd",
       "activeFontStyle": "bold",
-      "defaultLabelColor": "#000",
+      "defaultLabelColor": "#eee",
       "labelThreshold": 10,
       "defaultLabelHoverColor": "#fff",
       "fontStyle": "bold",
       "hoverFontStyle": "bold",
-      "defaultLabelSize": 14
+      "defaultLabelSize": 20
     },
     "graphProperties": {
-      "maxEdgeSize": 4,
+      "maxEdgeSize": 2,
       "minEdgeSize": 2,
       "minNodeSize": 2,
       "maxNodeSize": 14
