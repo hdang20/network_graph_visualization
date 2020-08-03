@@ -80,8 +80,10 @@ function initSigma(config) {
         minRatio: 0.75, // How far can we zoom out?
         maxRatio: 20, // How far can we zoom in?
     	};
-	
-    var a = sigma.init(document.getElementById("sigma-canvas")).drawingProperties(drawProps).graphProperties(graphProps).mouseProperties(mouseProps);
+
+    configProps={drawEdges: true};
+
+var a = sigma.init(document.getElementById("sigma-canvas")).drawingProperties(drawProps).graphProperties(graphProps).mouseProperties(mouseProps).configProperties(configProps);
     sigInst = a;
     a.active = !1;
     a.neighbors = {};
@@ -508,7 +510,7 @@ function nodeActive(a) {
 				d = c.group;
 				f.push('<li class="cf" rel="' + c.color + '"><div class=""></div><div class="">' + d + "</div></li>");
 			}*/
-			f.push('<li class="membership"><a href="#' + c.name + '" onmouseover="sigInst._core.plotter.drawHoverNode(sigInst._core.graph.nodesIndex[\'' + c.id + '\'])\" onclick=\"nodeActive(\'' + c.id + '\')" onmouseout="sigInst.refresh()">' + c.name + "</a></li>");
+			f.push('<li class="membership"><a href="#' + c.name + '" onmouseover="sigInst._core.plotter.drawHoverNode(sigInst._core.graph.nodesIndex[\'' + c.id + '\'])\" onclick=\"nodeActive(\'' + c.id + '\')" onmouseout="sigInst.refresh()">' + c.name + "</a> (" + c.group + ")</li>");
 		}
 		return f;
 	}
@@ -528,14 +530,14 @@ function nodeActive(a) {
 
 	if (groupByDirection) {
 		size=Object.size(mutual);
-		f.push("<h2>Mututal (" + size + ")</h2>");
-		(size>0)? f=f.concat(createList(mutual)) : f.push("No mutual links<br>");
+		/*f.push("<h2>Mututal (" + size + ")</h2>");
+		(size>0)? f=f.concat(createList(mutual)) : f.push("No mutual links<br>");*/
 		size=Object.size(incoming);
-		f.push("<h2>Incoming (" + size + ")</h2>");
-		(size>0)? f=f.concat(createList(incoming)) : f.push("No incoming links<br>");
+		f.push("<h2>Advisors (" + size + ")</h2>");
+		(size>0)? f=f.concat(createList(incoming)) : f.push("No advisor<br>");
 		size=Object.size(outgoing);
-		f.push("<h2>Outgoing (" + size + ")</h2>");
-		(size>0)? f=f.concat(createList(outgoing)) : f.push("No outgoing links<br>");
+		f.push("<h2>Advisees (" + size + ")</h2>");
+		(size>0)? f=f.concat(createList(outgoing)) : f.push("No advisee<br>");
 	} else {
 		f=f.concat(createList(sigInst.neighbors));
 	}

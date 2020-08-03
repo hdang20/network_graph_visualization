@@ -8,22 +8,22 @@
     "text": "National Art Education Association"
   },
   "text": {
-    "more": "The direction of relationship (edge) is clockwise. The color of relationship refers to the number of roles the professor played in his student's committee: grey (one role), green (two roles), and blue (three roles).",
-    "intro": "An interactive graph illustrates the relationships between professors and their students in art higher education",
+    "more": "",
+    "intro": "An interactive graph illustrates the relationships of a scholar with his/her higher education degree advisors and advisees. The direction of advisor-advisee relationship is clockwise. The color of relationship refers to the degrees that the relationship involved: green - Masters degree, white - Doctoral degree, and red - Masters and Doctoral degrees.",
     "title": "ART EDUCATION GENEALOGY"
   },
   "legend": {
-    "edgeLabel": "Professor-Student relationship",
-    "colorLabel": "Groups of connected Professor-Student",
-    "nodeLabel": "Professor or Student"
+    "edgeLabel": "Advisor-Advisee relationship",
+    "colorLabel": "Modularity",
+    "nodeLabel": "Art Scholar"
   },
   "features": {
     "search": true,
-    "groupSelectorAttribute": true,
-    "hoverBehavior": "default"
+    "groupSelectorAttribute": false,
+    "hoverBehavior": "dim"
   },
   "informationPanel": {
-    "groupByEdgeDirection": false,
+    "groupByEdgeDirection": true,
     "imageAttribute": false
   },
   "sigma": {
@@ -37,7 +37,8 @@
       "defaultLabelHoverColor": "#fff",
       "fontStyle": "bold",
       "hoverFontStyle": "bold",
-      "defaultLabelSize": 20
+      "defaultLabelSize": 20,
+	  "edgeLabels": true
     },
     "graphProperties": {
       "maxEdgeSize": 2,
