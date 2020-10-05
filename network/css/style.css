@@ -420,7 +420,15 @@ background-position: -11px -119px;
 }
 
 #mainpanel .edge {
-background-position: -51px -122px;
+background-position: -131px -147px;
+}
+
+#mainpanel .edgee {
+background-position: -171px -147px;
+}
+
+#mainpanel .edgeee {
+background-position: -91px -147px;
 }
 
 #mainpanel .colours {

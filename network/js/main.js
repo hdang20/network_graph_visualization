@@ -165,6 +165,20 @@ function setupGUI(config) {
 		//hide more information link
 		$(".edge").hide();
 	}
+	// Edgee
+	if (config.legend.edgeeLabel) {
+		$(".edgee").next().html(config.legend.edgeeLabel);
+	} else {
+		//hide more information link
+		$(".edgee").hide();
+	}
+	// Edgeee
+	if (config.legend.edgeeeLabel) {
+		$(".edgeee").next().html(config.legend.edgeeeLabel);
+	} else {
+		//hide more information link
+		$(".edgeee").hide();
+	}
 	// Colours
 	if (config.legend.nodeLabel) {
 		$(".colours").next().html(config.legend.colorLabel);

@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "network",
   "version": "1.0",
   "data": "data.json",
@@ -9,13 +9,15 @@
   },
   "text": {
     "more": "",
-    "intro": "An interactive graph illustrates the relationships of a scholar with his/her higher education degree advisors and advisees. The direction of advisor-advisee relationship is clockwise. The color of relationship refers to the degrees that the relationship involved: green - Masters degree, white - Doctoral degree, and red - Masters and Doctoral degrees.",
+    "intro": "This interactive network visualization illustrates committee relationships between scholars in higher education with their advisors and/or advisees. The directional representation of an advisor-advisee relationship is counter clockwise when denoting a scholar’s advisor and clockwise when denoting their advisee.",
     "title": "ART EDUCATION GENEALOGY"
   },
   "legend": {
-    "edgeLabel": "Advisor-Advisee relationship",
+    "edgeLabel": "Master's degree relationship",
+    "edgeeLabel": "Doctoral degree relationship",
+    "edgeeeLabel": "Master's & Doctoral degree relationship",
     "colorLabel": "Modularity",
-    "nodeLabel": "Art Scholar"
+    "nodeLabel": "Name of Scholar"
   },
   "features": {
     "search": true,
